@@ -32,6 +32,7 @@ from .lad_head import LADHead
 from .ld_head import LDHead
 from .mask2former_head import Mask2FormerHead
 from .maskformer_head import MaskFormerHead
+from .mask2former_head_ada import Mask2FormerHeadADA
 from .nasfcos_head import NASFCOSHead
 from .paa_head import PAAHead
 from .pisa_retinanet_head import PISARetinaHead
@@ -64,7 +65,7 @@ __all__ = [
     'EmbeddingRPNHead', 'LDHead', 'AutoAssignHead', 'DETRHead', 'YOLOFHead',
     'DeformableDETRHead', 'CenterNetHead', 'YOLOXHead', 'SOLOHead',
     'DecoupledSOLOHead', 'DecoupledSOLOLightHead', 'SOLOV2Head', 'LADHead',
-    'TOODHead', 'MaskFormerHead', 'Mask2FormerHead', 'DDODHead',
+    'TOODHead', 'MaskFormerHead', 'Mask2FormerHead', 'Mask2FormerHeadADA', 'DDODHead',
     'CenterNetUpdateHead', 'RTMDetHead', 'RTMDetSepBNHead', 'CondInstBboxHead',
     'CondInstMaskHead', 'RTMDetInsHead', 'RTMDetInsSepBNHead',
     'BoxInstBboxHead', 'BoxInstMaskHead', 'ConditionalDETRHead', 'DINOHead',

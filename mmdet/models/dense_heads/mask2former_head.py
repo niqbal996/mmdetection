@@ -303,8 +303,9 @@ class Mask2FormerHead(MaskFormerHead):
 
         if mask_targets.shape[0] == 0:
             # zero match
-            loss_dice = mask_preds.sum()
-            loss_mask = mask_preds.sum()
+            # If the labels are set to 255 then it should yield 0 loss value. 
+            loss_dice = mask_preds.sum() * 0.0 
+            loss_mask = mask_preds.sum() * 0.0
             return loss_cls, loss_mask, loss_dice
 
         with torch.no_grad():
